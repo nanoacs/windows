@@ -1,0 +1,82 @@
+//Fuentes
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+//font-family: 'Open Sans', sans-serif;
+@import 'https://fonts.googleapis.com/css?family=Hind+Madurai';
+//font-family: 'Hind Madurai', sans-serif;
+
+
+//Colores
+$fondo:#EEEEEE;
+$fondo-pag:#FFFFFF;
+$menu:#B81007;
+$letras:#3A3A3A;
+$resaltado:#286D99;
+$ban:#DBE2E8;
+
+//Estilos generales
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Hind Madurai', sans-serif;
+	background:$fondo;
+	position: relative;
+	min-height: 100vh;
+	color:$letras;
+}
+
+.contenedor{
+	background:$fondo-pag;
+	padding:.5em;
+	width:100%;
+}
+
+span{
+	color:$resaltado;
+}
+
+
+//Menu
+@import 'menu.scss';
+
+//Slider
+@import 'slider.scss';
+
+//ban texto
+.ban{
+	width:100%;
+	text-align: center;
+	background:lighten($ban,5%);
+	margin:1em auto;
+	padding:1em .2em;
+	border-top:1px solid $ban;
+	border-bottom: 1px solid $ban;
+}
+
+//Sections
+@import 'sections.scss';
+
+//Footer
+@import 'footer.scss';
+
+@media(min-width: 680px){
+	.contenedor{
+		border-top: 3px solid $menu;
+	}
+}
+
+@media(min-width:850px){
+	.contenedor{
+		width: 80%;
+		margin:auto;
+	}
+}
+
+@media(min-width: 1024px){
+	.contenedor{
+		width: 70%;
+	}
+}

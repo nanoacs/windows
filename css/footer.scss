@@ -1,0 +1,36 @@
+
+
+div[class^='foo']{
+	margin:1.5em 0em;
+}
+
+.foo1{
+	h4{
+		font-size:1.2em;
+		font-family: 'Open Sans', sans-serif
+	}
+
+	p{
+		font-size:.9em;
+	}
+}
+
+.foo2{
+	font-size:.8em;
+	font-weight: 700;
+	text-align: center;
+}
+
+@media(min-width: 1024px){
+	footer{
+		padding: .5em;
+		font-size: .9em;	
+	}
+	div[class^='foo']{
+		margin: 0em;
+	}
+
+	.foo2{
+		margin-bottom: 0;
+	}
+}
